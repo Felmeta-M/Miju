@@ -13,7 +13,7 @@ const Container = styled.div`
 const Arrow = styled.div`
     width: 50px;
     height: 50px;
-    background-color: white;
+    color: #6b07f7;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -25,7 +25,6 @@ const Arrow = styled.div`
     right: ${props=> props.direction === "right" && "10px"};
     margin: auto;
     cursor: pointer;
-    opacity: 0.5;
     z-index: 2;
 `;
 const Wrapper = styled.div`
@@ -65,6 +64,8 @@ const Button = styled.button`
     font-size: 20px;
     background-color: transparent;
     cursor: pointer;
+    border: solid #6b07f7;
+    border-radius: 5px;
 `;
 
 const Slider = () => {
