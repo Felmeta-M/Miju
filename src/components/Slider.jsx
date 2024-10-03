@@ -33,6 +33,7 @@ const Wrapper = styled.div`
     display: flex;
     transform: translateX(0vw);
 `;
+
 const Slide = styled.div`
     width: 100vw;
     height: 100vh;
