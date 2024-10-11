@@ -59,6 +59,7 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
     font-size: 70px;
 `;
+
 const Desc = styled.p`
     margin: 50px 0;
     font-size: 20px;
