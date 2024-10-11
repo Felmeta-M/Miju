@@ -76,6 +76,7 @@ const Button = styled.button`
     border-radius: 5px;
 `;
 
+
 const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
     const handleClick = (direction) => {
