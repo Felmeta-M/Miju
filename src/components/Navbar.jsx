@@ -15,34 +15,34 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
-  display: flex;
-  align-items: center;
 `;
 
-const Language = styled.span`
-  font-size: 14px;
-  cursor: pointer;
+const Logo = styled.h1`
+  font-weight: bold;
+`;
+
+const Center = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SearchContainer = styled.div`
   border: 1px solid lightgray;
   display: flex;
   align-items: center;
-  margin-left: 25px;
-  padding: 5px
+  padding: 5px;
 `;
 
 const Input = styled.input`
   border: none;
 `;
 
-const Center = styled.div`
-  flex: 1;
-  text-align: center;
-`;
-
-const Logo = styled.h1`
-  font-weight: bold;
+const Language = styled.span`
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
 `;
 
 const Right = styled.div`
@@ -62,14 +62,14 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
-          <SearchContainer>
-            <Input />
-            <Search style={{color: "gray", fontSize:16}}/>
-          </SearchContainer>
+          <Logo>Miju.</Logo>
         </Left>
         <Center>
-          <Logo>Miju.</Logo>
+          <SearchContainer>
+            <Input />
+            <Search style={{ color: "gray", fontSize: 16 }} />
+          </SearchContainer>
+          <Language>EN</Language>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
@@ -82,7 +82,7 @@ const Navbar = () => {
         </Right>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
 export default Navbar;
