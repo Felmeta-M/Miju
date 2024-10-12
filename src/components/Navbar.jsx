@@ -75,7 +75,16 @@ const Navbar = () => {
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>SIGN IN</MenuItem>
           <MenuItem>
-            <Badge badgeContent={4} color="secondary">
+            <Badge
+              badgeContent={4}
+              sx={{
+                "& .MuiBadge-badge": {
+                  // backgroundColor: "#2e2f5b",
+                  backgroundColor: "#018ABD",
+                  color: "white", // Text color inside the badge
+                },
+              }}
+            >
               <ShoppingCartOutlined color="action" />
             </Badge>
           </MenuItem>
