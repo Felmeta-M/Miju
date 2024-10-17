@@ -50,34 +50,34 @@ export const categories = [
 export const popularProducts = [
     {
         id: 1,
-        img: Oromo,
+        img: Orom,
     },
     {
         id: 2,
-        img: Sura,
+        img: Or,
     },
     {
         id: 3,
-        img: Sur,
+        img: Wing,
     },
     {
         id: 4,
-        img: Oromo,
+        img: Orom,
     },
     {
         id: 5,
-        img: Sura,
+        img: Or,
     },
     {
         id: 6,
-        img: Sur,
+        img: Wing,
     },
     {
         id: 7,
-        img: Oromo,
+        img: Orom,
     },
     {
         id: 8,
-        img: Sura,
+        img: Or,
     },
 ]
