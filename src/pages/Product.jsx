@@ -5,9 +5,7 @@ import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { Add, Remove } from "@mui/icons-material";
 
-const Container = styled.div`
-  //   height: 100vh;
-`;
+const Container = styled.div``;
 
 const Wrapper = styled.div`
   padding: 50px;
