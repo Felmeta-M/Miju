@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Announcement from "../components/Announcement";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
+import { Add, Remove } from "@mui/icons-material";
 
 const Container = styled.div`
   //   height: 100vh;
@@ -112,14 +113,14 @@ const Product = () => {
               </FilterSize>
             </Filter>
           </FilterContainer>
-          {/* <AddContainer>
+          <AddContainer>
             <AmountContainer>
               <Remove />
               <Amount>1</Amount>
               <Add />
             </AmountContainer>
             <Button>ADD TO CART</Button>
-          </AddContainer> */}
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
       <Newsletter />
