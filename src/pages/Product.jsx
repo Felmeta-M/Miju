@@ -7,7 +7,6 @@ import { Add, Remove } from "@mui/icons-material";
 
 const Container = styled.div`
   //   height: 100vh;
-  //   display: flex;
 `;
 
 const Wrapper = styled.div`
