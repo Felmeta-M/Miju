@@ -8,9 +8,12 @@ import {
   Twitter,
 } from "@mui/icons-material";
 import styled from "styled-components";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
   display: flex;
+  ${mobile({ flexDirection: "column" })};
+  ${tablet({ flexDirection: "column" })};
 `;
 
 const Left = styled.div`
@@ -49,6 +52,8 @@ const Center = styled.div`
   font-size: 14px;
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
+  ${mobile({ display: "none" })};
+  ${tablet({ borderLeft: "none", borderRight: "none", marginLeft: "0px" })}
 `;
 const Title = styled.h3`
   margin-bottom: 30px;
@@ -71,6 +76,8 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "#f5f5f5" })};
+  ${tablet({ backgroundColor: "#f5f5f5" })};
 `;
 
 const ContactItem = styled.div`
