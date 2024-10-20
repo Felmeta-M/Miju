@@ -2,6 +2,8 @@ import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import styled from "styled-components";
 import { useState } from "react";
 import { sliderItems } from "../data";
+import { mobile, tablet } from "../responsive";
+import { height, padding } from "@mui/system";
 
 const Container = styled.div`
   width: 100%;
@@ -9,6 +11,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
@@ -44,11 +47,13 @@ const Slide = styled.div`
   display: flex;
   align-items: center;
   background-color: #${(props) => props.bg};
+  ${tablet({ flexDirection: "column" })};
 `;
 
 const ImgContainer = styled.div`
   height: 100%;
   flex: 1;
+  ${tablet({ width: "50%", height: "50%" })}
 `;
 
 const Image = styled.img`
@@ -58,10 +63,18 @@ const Image = styled.img`
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
+  ${tablet({
+    padding: "10px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  })}
 `;
 
 const Title = styled.h1`
   font-size: 70px;
+  ${tablet({ fontSize: "50px", padding: "10px" })}
 `;
 
 const Desc = styled.p`
@@ -69,6 +82,7 @@ const Desc = styled.p`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
+  ${tablet({ fontSize: "16px", margin: "25px 25px" })}
 `;
 
 const Button = styled.button`
@@ -78,6 +92,7 @@ const Button = styled.button`
   cursor: pointer;
   border: solid #2e2f5b 2px;
   border-radius: 5px;
+  ${tablet({ fontSize: "16px" })}
 `;
 
 const Slider = () => {
