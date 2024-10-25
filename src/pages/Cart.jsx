@@ -82,6 +82,7 @@ const Details = styled.div`
 `;
 
 const ProductName = styled.div``;
+
 const ProductId = styled.span``;
 const ProductColor = styled.div`
   width: 20px;
