@@ -69,6 +69,7 @@ const ProductDetail = styled.div`
   flex: 2;
   display: flex;
 `;
+
 const Image = styled.img`
   width: 200px;
 `;
