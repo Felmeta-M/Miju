@@ -80,6 +80,7 @@ const Details = styled.div`
   flex-direction: column;
   justify-content: space-around;
 `;
+
 const ProductName = styled.div``;
 const ProductId = styled.span``;
 const ProductColor = styled.div`
