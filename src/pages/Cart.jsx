@@ -60,6 +60,7 @@ const Info = styled.div`
   ${tablet({ marginBottom: "20px" })};
   ${desktop({ flex: "2" })};
 `;
+
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
