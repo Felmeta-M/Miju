@@ -40,6 +40,7 @@ const TopTexts = styled.div`
   ${mobile({ display: "none" })};
   ${tablet({ display: "none" })};
 `;
+
 const TopText = styled.span`
   text-decoration: underline;
   cursor: pointer;
