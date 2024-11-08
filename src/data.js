@@ -34,17 +34,26 @@ export const categories = [
         id: 1,
         img: Oromo,
         title: "SHIRT STYLE",
+        cat: "Women"
     },
     {
         id: 2,
         img: Sura,
         title: "LONGWEAR LOVE",
+        cat: "Coat"
     },
     {
         id: 3,
         img: Sur,
         title: "LIGHT JACKETS",
+        cat: "Jeans"
     },
+    {
+        id: 4,
+        img: Oromo,
+        title: "WINTER STYLE",
+        cat: "Jacket"
+    }
 ];
 
 export const popularProducts = [
