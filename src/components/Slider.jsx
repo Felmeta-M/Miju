@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { useState } from "react";
 import { sliderItems } from "../data";
 import { mobile, tablet } from "../responsive";
-import { height, padding } from "@mui/system";
 
 const Container = styled.div`
   width: 100%;
@@ -64,12 +63,12 @@ const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
   ${tablet({
-    padding: "10px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-  })}
+  padding: "10px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  justifyContent: "center",
+})}
 `;
 
 const Title = styled.h1`
